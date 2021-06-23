@@ -1,0 +1,47 @@
+.partners {
+  padding-top: 160px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 44px;
+  }
+  &__content {
+    max-width: 606px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.46;
+
+    color: $black;
+  }
+  &__representation {
+    margin-bottom: 55px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+
+    letter-spacing: 0.035em;
+
+    color: $grey;
+  }
+  &__accent {
+    color: $green;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+
+    letter-spacing: 0.035em;
+
+    color: $grey;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 232px);
+    grid-gap: 34px 33px;
+  }
+}
