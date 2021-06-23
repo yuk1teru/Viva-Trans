@@ -1,0 +1,73 @@
+.hero {
+  padding-bottom: 160px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-top: 74px;
+    max-width: 599px;
+    padding-left: 13px;
+  }
+  &__title {
+    margin-bottom: 85px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.46;
+
+    color: $green;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: $lgreen;
+    padding: 8px 8px 8px 35px;
+  }
+  &__input {
+    width: 60%;
+    border: none;
+    margin-right: 10px;
+    background-color: transparent;
+
+    font-size: 14px;
+    line-height: 1.46;
+    outline: none;
+  }
+  &__btn {
+    position: relative;
+    padding: 16px 80px;
+
+    background-color: $green;
+    color: $white;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -300%;
+      left: 0;
+      width: 30px;
+      height: 500%;
+      background-color: rgba($white, 0.3);
+
+      transform: rotate(45deg) translate(-10px, 0px);
+    }
+    &:hover,
+    &:focus {
+      background-color: #5ba25f;
+      &::before {
+        transform: rotate(45deg) translate(300px, 0px);
+        transition: transform 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      }
+    }
+  }
+}

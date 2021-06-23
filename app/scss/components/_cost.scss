@@ -1,0 +1,108 @@
+.cost {
+  &__depends {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 73px;
+  }
+
+  &__content {
+    max-width: 535px;
+  }
+}
+
+.depends {
+  &__title {
+    margin-bottom: 11px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.38;
+    color: $black;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-top: 11px;
+    }
+  }
+  &__text {
+    margin-left: 35px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.38;
+
+    color: #727171;
+    &--small {
+      position: relative;
+      &::before {
+        content: '(Подъем на этаж, упаковка, разборка мебели)';
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.average {
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.38;
+  &__title {
+    margin-bottom: 37px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.38;
+    color: $black;
+  }
+  &__content {
+    max-width: 542px;
+  }
+
+  &__calc-box {
+    padding: 25px 30px;
+    background-color: $green;
+    border-radius: 5px;
+  }
+
+  &__calculation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__calc {
+    flex-basis: 204px;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+
+    &:nth-child(1) {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 79px;
+        top: 0;
+        right: -41px;
+        background: #ffffff;
+        border-radius: 2px;
+      }
+    }
+  }
+  &__total {
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    position: relative;
+    right: -18px;
+  }
+}

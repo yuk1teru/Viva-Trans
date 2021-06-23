@@ -15,9 +15,218 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container header__inner"></div>
+        <div class="container header__inner">
+          <div class="header__info">
+            <p class="header__text header__text--width">
+              Грузоперевозки по киеву (физ лицам)
+            </p>
+            <div class="header__center">
+              <p class="header__text">Юридическим лицам</p>
+
+              <a class="header__tel" href="tel:+380442270202"
+                >(044) 227 02 02</a
+              >
+
+              <a class="header__tel" href="tel:+380662270202"
+                >(066) 227 02 02</a
+              >
+            </div>
+            <p class="header__work-time">
+              Мы работаем с 8:00 до 22:00 Без выходных
+            </p>
+          </div>
+          <div class="header__main">
+            <a class="header__logo" href=""
+              ><img
+                class="header__logo-img"
+                src="./images/logo.jpg"
+                alt="logo"
+                width="261"
+                height="65"
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="">ТРАНСПОРТ</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="">УСЛУГИ</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="">ЦЕНЫ</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn" aria-label="Кнопка Заказать Звонок">
+              ЗАКАЗАТЬ ЗВОНОК
+            </button>
+          </div>
+        </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Предлагаем адекватную тарификацию на комплексные услуги по
+                  перевозве грузов
+                </h1>
+                <form class="hero__form">
+                  <input
+                    class="hero__input"
+                    type="tel"
+                    placeholder="Введите ваш номер"
+                  />
+                  <button class="hero__btn" type="submit">Заказать</button>
+                </form>
+              </div>
+              <div class="hero__img-box">
+                <img
+                  class="hero__img"
+                  src="./images/hero.png"
+                  alt="hero-photo"
+                  width="569"
+                  height="580"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cost">
+          <div class="container">
+            <div class="cost__inner">
+              <div class="cost__depends depends">
+                <img
+                  class="depends__img"
+                  src="./images/depends-loader.jpg"
+                  alt="гружчик"
+                  width="649"
+                  height="324"
+                />
+                <div class="depends__content">
+                  <h2 class="depends__title">Стоимость зависит от:</h2>
+                  <ul class="depends__list">
+                    <li class="depends__item">
+                      <svg width="66" height="66">
+                        <use href="./images/icon.svg#icon-weight"></use>
+                      </svg>
+                      <span class="depends__text">Общего веса груза</span>
+                    </li>
+                    <li class="depends__item">
+                      <svg width="66" height="66">
+                        <use href="./images/icon.svg#icon-mileage"></use>
+                      </svg>
+                      <span class="depends__text">Километража доставки</span>
+                    </li>
+                    <li class="depends__item">
+                      <svg width="66" height="66">
+                        <use href="./images/icon.svg#icon-time"></use>
+                      </svg>
+                      <span class="depends__text"
+                        >Часовых затрат на выполнение заказа</span
+                      >
+                    </li>
+                    <li class="depends__item">
+                      <svg width="66" height="66">
+                        <use href="./images/icon.svg#icon-services"></use>
+                      </svg>
+                      <span class="depends__text depends__text--small"
+                        >Дополнительных услуг грузчиков</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cost__average average">
+                <div class="average__content">
+                  <h2 class="average__title">
+                    Средний заказ перевозки мебели по городу вам обойдется:
+                  </h2>
+                  <div class="average__calc-box">
+                    <div class="average__calculation">
+                      <span class="average__calc"
+                        >750 грн - 2 часа + подача авто</span
+                      >
+                      <span class="average__calc"
+                        >200 грн - 2 часа услуги грузчиков</span
+                      >
+                    </div>
+                    <span class="average__total">Итог: 950 грн</span>
+                  </div>
+                </div>
+                <img
+                  class="average__img"
+                  src="./images/avarage.png"
+                  alt="машина"
+                  width="649"
+                  height="324"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="container">
+            <div class="price__inner">
+              <h2 class="price__title">Прайс на услуги</h2>
+              <div class="price__list-box">
+                <ul class="price__list">
+                  <li class="price__card">
+                    <svg class="price__icon" width="62" height="48">
+                      <use href="./images/icon.svg#icon-price-hour"></use>
+                    </svg>
+                    <h3 class="price__card-title">от 250 грн/час</h3>
+                    <p class="price__text">Перевозка мебери</p>
+                    <p class="price__text">(Переезд)</p>
+                  </li>
+                  <li class="price__card">
+                    <svg class="price__icon" width="62" height="48">
+                      <use href="./images/icon.svg#icon-price-hour"></use>
+                    </svg>
+                    <h3 class="price__card-title">от 250 грн/час</h3>
+                    <p class="price__text">Минимальный заказ:</p>
+                    <p class="price__text">2 часа + подача авто</p>
+                  </li>
+                  <li class="price__card">
+                    <svg class="price__icon" width="59" height="48">
+                      <use
+                        href="./images/icon.svg#icon-price-instruments"
+                      ></use>
+                    </svg>
+                    <h3 class="price__card-title">50 грн/предмет</h3>
+                    <p class="price__text">Сборка-разборка мебели</p>
+                  </li>
+                  <li class="price__card">
+                    <svg class="price__icon" width="62" height="48">
+                      <use href="./images/icon.svg#icon-price-services"></use>
+                    </svg>
+                    <h3 class="price__card-title">100 грн/час</h3>
+                    <p class="price__text">Услуги грузчиков</p>
+                  </li>
+                  <li class="price__card">
+                    <svg class="price__icon" width="66" height="48">
+                      <use href="./images/icon.svg#icon-price-climb"></use>
+                    </svg>
+                    <h3 class="price__card-title">50 грн/этаж</h3>
+                    <p class="price__text">Спуск-поднятие мебели</p>
+                  </li>
+                  <li class="price__card">
+                    <svg class="price__icon" width="62" height="48">
+                      <use href="./images/icon.svg#icon-price-cargo"></use>
+                    </svg>
+                    <h3 class="price__card-title">+ 3 грн/кг</h3>
+                    <p class="price__text">Груз, превышающий 100 кг</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
 
